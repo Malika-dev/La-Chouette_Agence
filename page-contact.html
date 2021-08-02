@@ -150,29 +150,44 @@
                 fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!"
               >
                 <div class="form-group">
-                  <label> Nom </label>
-                  <input id="name" class="form-control" required />
-                </div>
-                <div class="form-group">
-                  <label> Adresse email </label>
+                  <label for="name"> Nom </label>
                   <input
-                    id="email"
+                    type="text"
+                    id="name"
                     class="form-control"
-                    type="email"
+                    name="user_mail"
                     required
                   />
                 </div>
                 <div class="form-group">
-                  <label> Comment nous avez-vous connu ? </label>
+                  <label for="mail"> Adresse email </label>
                   <input
+                    type="email"
+                    id="email"
+                    class="form-control"
+                    name="user_mail"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="msg"> Comment nous avez-vous connu ? </label>
+                  <!--   <input
                     class="form-control"
                     type="email"
                     required
                     id="input_504"
-                  />
+                  />-->
+                  <textarea
+                    id="input_504"
+                    class="form-control"
+                    rows="2"
+                    cols="50"
+                    name="user_message"
+                    required
+                  ></textarea>
                 </div>
                 <div class="form-group">
-                  <label>
+                  <label for="msg">
                     Brief de votre projet (Ajoutez autant de détails que
                     nécessaire)<br /> </label
                   ><textarea
